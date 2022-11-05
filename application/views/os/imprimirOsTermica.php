@@ -80,6 +80,18 @@ $totalProdutos = 0; ?>
                                         <?php echo $result->status ?>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <b>Solicitante: </b>
+                                        <?php echo htmlspecialchars_decode($result->solicitante) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <b>Referência: </b>
+                                        <?php echo htmlspecialchars_decode($result->referencia) ?>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <table class="table table-condensed">

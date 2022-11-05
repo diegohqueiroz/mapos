@@ -143,6 +143,24 @@
                                 </tr>
                             <?php } ?>
 
+                            <?php if ($result->solicitante != null) { ?>
+                                <tr>
+                                    <td colspan="6">
+                                        <b>SOLICITANTE: </b>
+                                        <?php echo htmlspecialchars_decode($result->solicitante) ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+
+                            <?php if ($result->referencia != null) { ?>
+                                <tr>
+                                    <td colspan="6">
+                                        <b>REFERÊNCIA: </b>
+                                        <?php echo htmlspecialchars_decode($result->referencia) ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+
                             <?php if ($result->descricaoProduto != null) { ?>
                                 <tr>
                                     <td colspan="6">

@@ -86,6 +86,16 @@
                                         </div>
                                     </div>
                                     <div class="span12" style="padding: 1%; margin-left: 0">
+                                        <div class="span6">
+                                            <label for="solicitante">Solicitante<span class="required">*</span></label>
+                                            <input id="solicitante" class="span12" type="text" name="solicitante" value="<?php echo $result->solicitante ?>" />
+                                        </div>
+                                        <div class="span6">
+                                            <label for="referencia">Referência<span class="required">*</span></label>
+                                            <input id="referencia" class="span12" type="text" name="referencia" value="<?php echo $result->referencia ?>" />
+                                        </div>
+                                    </div>
+                                    <div class="span12" style="padding: 1%; margin-left: 0">
                                         <div class="span3">
                                             <label for="status">Status<span class="required">*</span></label>
                                             <select class="span12" name="status" id="status" value="">

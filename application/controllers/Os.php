@@ -91,6 +91,8 @@ class Os extends MY_Controller
             $dataInicial = $this->input->post('dataInicial');
             $dataFinal = $this->input->post('dataFinal');
             $termoGarantiaId = $this->input->post('termoGarantia');
+            $referencia = $this->input->post('referencia');
+            $solicitante = $this->input->post('solicitante');
 
             try {
                 $dataInicial = explode('/', $dataInicial);
@@ -113,6 +115,8 @@ class Os extends MY_Controller
 
             $data = [
                 'dataInicial' => $dataInicial,
+                'referencia' => $referencia,
+                'solicitante' => $solicitante,
                 'clientes_id' => $this->input->post('clientes_id'), //set_value('idCliente'),
                 'usuarios_id' => $this->input->post('usuarios_id'), //set_value('idUsuario'),
                 'dataFinal' => $dataFinal,
@@ -201,6 +205,8 @@ class Os extends MY_Controller
             $dataInicial = $this->input->post('dataInicial');
             $dataFinal = $this->input->post('dataFinal');
             $termoGarantiaId = $this->input->post('garantias_id') ?: null;
+            $referencia = $this->input->post('referencia');
+            $solicitante = $this->input->post('solicitante');
 
             try {
                 $dataInicial = explode('/', $dataInicial);
@@ -215,6 +221,8 @@ class Os extends MY_Controller
             $data = [
                 'dataInicial' => $dataInicial,
                 'dataFinal' => $dataFinal,
+                'referencia' => $referencia,
+                'solicitante' => $solicitante,
                 'garantia' => $this->input->post('garantia'),
                 'garantias_id' => $termoGarantiaId,
                 'descricaoProduto' => $this->input->post('descricaoProduto'),
